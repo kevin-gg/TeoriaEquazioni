@@ -44,8 +44,50 @@ namespace EquazioniLibrary
             return delta;
         }
 
-        
+        public static string EquationDegree1(double a, double b, double c)
+        {
+            string risultato = "";
+            if (a == 0)
+            {
+                if (b == 0)
+                {
+                    risultato = "Indeterminato";
+                }
+            }
+            if (a != 0)
+            {
+                if (b == 0)
+                {
+                    risultato = "Impossibile";
+                }
+                else
+                {
+                    double x1, x2;
+                    double delta = (b * b) - (4 * a * c);
+                    x1 = (-b + Math.Sqrt(delta)) / 2 * a;
+                    x2 = (-b - Math.Sqrt(delta)) / 2 * a;
+                    return ($"x1={x1} x2={x2}");
+                }
+            }
+
+            return risultato;
 
         }
+
+        public static string Result(double a, double b, double c)
+        {
+
+            double x1, x2;
+            double delta = (b * b) - (4 * a * c);
+            x1 = (-b + Math.Sqrt(delta)) / 2 * a;
+            x2 = (-b - Math.Sqrt(delta)) / 2 * a;
+            return ($"x1={x1} x2={x2}");
+        }
+
+
+
+
+
     }
+}
 

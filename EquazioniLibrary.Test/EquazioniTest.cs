@@ -47,7 +47,34 @@ namespace EquazioniLibrary.Test
         [TestMethod]
         public void TestMethod5()
         {
+            double a = 0;
+            double b = 0;
+            double c = 10;
+            string valore_aspettato = "Indeterminato";
+            string prova = Equazioni.EquationDegree1(a, b, c);
+            Assert.AreEqual(valore_aspettato, prova);
+        }
 
+        [TestMethod]
+        public void TestMethod6()
+        {
+            double a = 7;
+            double b = 0;
+            double c = 2;
+            string valore_aspettato = "Impossibile";
+            string prova = Equazioni.EquationDegree1(a, b, c);
+            Assert.AreEqual(valore_aspettato, prova);
+        }
+
+        [TestMethod]
+        public void TestMethod7()
+        {
+            double a = 1;
+            double b = -6;
+            double c = 5;
+            string valore_aspettato = ($"x1={5} x2={1}");
+            string prova = Equazioni.Result(a, b, c);
+            Assert.AreEqual(valore_aspettato, prova);
         }
 
 
