@@ -6,7 +6,7 @@ namespace EquazioniLibrary.Test
     public class EquazioniTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void IsDetermined()
         {
             double a = 10;
             bool valore_aspettato = true;
@@ -15,7 +15,7 @@ namespace EquazioniLibrary.Test
         }
 
         [TestMethod]
-        public void TestMethod2()
+        public void IsInconsisted()
         {
             double a = 0;
             double b = 10;
@@ -25,7 +25,7 @@ namespace EquazioniLibrary.Test
         }
 
         [TestMethod]
-        public void TestMethod3()
+        public void IsDegree2()
         {
             double g = 2;
             bool valore_aspettato = true;
@@ -34,7 +34,7 @@ namespace EquazioniLibrary.Test
         }
 
         [TestMethod]
-        public void TestMethod4()
+        public void Delta()
         {
             double a = 2;
             double b = 2;
@@ -45,7 +45,7 @@ namespace EquazioniLibrary.Test
         }
 
         [TestMethod]
-        public void TestMethod5()
+        public void Degree1()
         {
             double a = 0;
             double b = 0;
@@ -56,7 +56,7 @@ namespace EquazioniLibrary.Test
         }
 
         [TestMethod]
-        public void TestMethod6()
+        public void EquationDegree1()
         {
             double a = 7;
             double b = 0;
@@ -67,7 +67,7 @@ namespace EquazioniLibrary.Test
         }
 
         [TestMethod]
-        public void TestMethod7()
+        public void Result()
         {
             double a = 1;
             double b = -6;
