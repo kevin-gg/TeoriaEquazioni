@@ -49,23 +49,23 @@ namespace EquazioniLibrary
             string risultato = "";
             if (a == 0)
             {
-                if (b == 0)
+                if (b != 0)
                 {
-                    risultato = "Indeterminato";
+                    risultato = "Impossibile";
                 }
             }
             if (a != 0)
             {
                 if (b == 0)
                 {
-                    risultato = "Impossibile";
+                    risultato = "Indeterminata";
                 }
                 else
                 {
                     double x1, x2;
                     double delta = (b * b) - (4 * a * c);
-                    x1 = (-b + Math.Sqrt(delta)) / 2 * a;
-                    x2 = (-b - Math.Sqrt(delta)) / 2 * a;
+                    x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+                    x2 = (-b - Math.Sqrt(delta)) / (2 * a);
                     return ($"x1={x1} x2={x2}");
                 }
             }
@@ -79,8 +79,8 @@ namespace EquazioniLibrary
 
             double x1, x2;
             double delta = (b * b) - (4 * a * c);
-            x1 = (-b + Math.Sqrt(delta)) / 2 * a;
-            x2 = (-b - Math.Sqrt(delta)) / 2 * a;
+            x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+            x2 = (-b - Math.Sqrt(delta)) / (2 * a);
             return ($"x1={x1} x2={x2}");
         }
 
